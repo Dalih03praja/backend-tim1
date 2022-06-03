@@ -12,11 +12,11 @@
     "db:migrate": "./node_modules/.bin/sequelize-cli db:migrate",
     "db:rollback": "./node_modules/.bin/sequelize-cli db:migrate:undo",
     "db:seed": "./node_modules/.bin/sequelize-cli db:seed:all",
-    "build": "yarn db:migrate"
+    "build": "npm run db:migrate"
   },
   "dependencies": {
     "axios": "^0.27.2",
-    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.17.3",

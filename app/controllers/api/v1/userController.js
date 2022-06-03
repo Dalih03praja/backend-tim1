@@ -1,6 +1,6 @@
 const userService = require("../../../services/userService");
 const jwt = require("jsonwebtoken");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const {JWT_SECRET_KEY = "Rahasia"} = process.env;
 
 function createToken(user) {
